@@ -1,11 +1,6 @@
-import sys
-import os
 import pandas as pd
 import joblib
 from data_preprocessing import preprocess_data
-
-# Insert the project root directory into sys.path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 def load_model(model_path):
     """Load a saved model from disk."""
