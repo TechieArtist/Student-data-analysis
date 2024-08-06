@@ -1,0 +1,15 @@
+name: student_analysis
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - altair
+  - plotly
+  - bokeh
+  - jupyter
+  - faker
