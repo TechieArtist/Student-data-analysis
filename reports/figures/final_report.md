@@ -7,7 +7,7 @@ This report provides an overview of the student performance prediction project, 
 ## Data Preprocessing
 
 ### Data Collection
-- **Source:** The dataset was collected from [dataset source, if applicable].
+- **Source:** The dataset was collected from Sling Academy.
 - **Features:** The dataset contains various features including student demographics, academic performance, and extracurricular activities.
 
 ### Preprocessing Steps
