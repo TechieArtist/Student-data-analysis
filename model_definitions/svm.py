@@ -4,11 +4,11 @@ import joblib
 from sklearn.svm import SVC
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from source.data_preprocessing import load_data, preprocess_data  # Ensure these functions are defined
+from source.data_preprocessing import load_data, preprocess_data  
 
 def train_svm(X_train, y_train):
     """Train an SVM model."""
-    model = SVC(probability=True)  # Enable probability estimates
+    model = SVC(probability=True)  
     model.fit(X_train, y_train)
     return model
 
@@ -25,8 +25,8 @@ def main():
     df = preprocess_data(df)
 
     # Split the data into training and testing sets
-    X = df.drop('Passed', axis=1)  # Replace 'Passed' with the name of your target column
-    y = df['Passed']  # Replace 'Passed' with the name of your target column
+    X = df.drop('Passed', axis=1)  
+    y = df['Passed']  
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     # Train the SVM model
